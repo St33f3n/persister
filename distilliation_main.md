@@ -145,8 +145,12 @@ Transformiere Gespräche in **räumliche Gedankenreisen** mit kontextuellen Erin
 
 ## 📝 FORMATIERUNGS-GUIDELINES
 
-### Standard-Format: Markdown
-```markdown
+### ⚠️ KRITISCHE FORMATIERUNGS-REGELN
+- **MARKDOWN-OUTPUT**: Niemals in Code-Blöcken! Direkt als formatiertes Markdown ausgeben
+- **ZEILENUMBRÜCHE**: Nach └─ Einträgen IMMER explizite Leerzeile für Lesbarkeit
+
+### Standard-Format: Markdown (NICHT in Code-Blöcken!)
+```
 # Haupttitel der Konversation
 ## Unterbereiche mit ##
 ### Details mit ###
@@ -156,8 +160,19 @@ Transformiere Gespräche in **räumliche Gedankenreisen** mit kontextuellen Erin
 `Inline-Code` für Variablen/Funktionen
 ```
 
-### Code-Blöcke:
+### Korrekte └─ Struktur mit Zeilenumbrüchen:
 ```
+🚀 STARTPUNKT: Ursprungsidee
+   └─ Kontext: Warum relevant
+   
+📍 STATION 1: Erste Erkenntnis  
+   └─ Anker: Warum entscheidend
+   
+📍 STATION 2: Entwicklung
+   └─ Anker: Neue Perspektive
+```
+
+### Code-Blöcke (NUR für echten Code):
 Immer mit Sprache spezifizieren:
 ```python
 def example():
@@ -165,14 +180,13 @@ def example():
 ```
 
 ```bash
-# Shell commands
+# Shell commands  
 npm install package
 ```
 
-```sql  
+```sql
 -- Database queries
 SELECT * FROM conversations;
-```
 ```
 
 ### Formeln: Embedded LaTeX
